@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="679.0" style="-fx-background-color: #fff59d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exam.portal.exams.student.InstructionController">
+   <top>
+      <AnchorPane prefHeight="102.0" prefWidth="679.0" style="-fx-background-color: #b2ebf2;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <Label fx:id="testTitle" alignment="CENTER" layoutX="214.0" layoutY="14.0" prefHeight="27.0" prefWidth="241.0" text="Test Title" textAlignment="CENTER" textFill="#0e11d7">
+            <font>
+               <Font name="System Bold Italic" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="34.0" layoutY="58.0" prefHeight="26.0" prefWidth="78.0" text="Duration :" textFill="#0754ba">
+            <font>
+               <Font name="System Bold Italic" size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="447.0" layoutY="38.0" prefHeight="26.0" prefWidth="119.0" text="Total Questions : " textFill="#0754ba">
+            <font>
+               <Font name="System Bold Italic" size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="478.0" layoutY="58.0" prefHeight="26.0" prefWidth="110.0" text="Max Score :" textFill="#0754ba">
+            <font>
+               <Font name="System Bold Italic" size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="duration" layoutX="119.0" layoutY="62.0" prefHeight="18.0" prefWidth="122.0" text="minutes">
+            <font>
+               <Font name="System Bold Italic" size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="questionCount" layoutX="577.0" layoutY="42.0" prefHeight="18.0" prefWidth="78.0" text="questions">
+            <font>
+               <Font name="System Bold Italic" size="14.0" />
+            </font>
+         </Label>
+         <Label fx:id="maxScore" layoutX="577.0" layoutY="62.0" prefHeight="18.0" prefWidth="78.0" text="score">
+            <font>
+               <Font name="System Bold Italic" size="14.0" />
+            </font>
+         </Label>
+         <JFXButton layoutX="14.0" layoutY="15.0" onAction="#back" prefHeight="17.0" prefWidth="46.0" stylesheets="@../../cssFiles/style.css" text="Back" textFill="#faf1f1">
+            <font>
+               <Font name="System Bold Italic" size="12.0" />
+            </font>
+         </JFXButton>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="418.0" prefWidth="509.0" style="-fx-background-color: #b2ebf2;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <children>
+            <Label alignment="CENTER" layoutX="12.0" layoutY="14.0" prefHeight="26.0" prefWidth="126.0" text="Instructions" textFill="#180ed2">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="49.0" prefHeight="30.0" prefWidth="409.0" text="1. Make sure you are alone in the room.">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="79.0" prefHeight="30.0" prefWidth="411.0" text="2. You do not contain devices like mobile,tablet etc.">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="109.0" prefHeight="41.0" prefWidth="411.0" text="3. Make sure your webcam working fine. If it's not working   then you will not be able to give the test" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="151.0" prefHeight="23.0" prefWidth="411.0" text="4. You remain in front of webcam of laptop">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="174.0" prefHeight="24.0" prefWidth="434.0" text="5. You will need to close all other application before starting test." wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="198.0" prefHeight="44.0" prefWidth="434.0" text="6. If you close or minimize the question paper or open any other application then you will be logged out from exam" wrapText="true" AnchorPane.topAnchor="198.0">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <AnchorPane prefHeight="418.0" prefWidth="182.0" style="-fx-background-color: #b2ebf2;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <children>
+            <Label fx:id="timerStatus" alignment="CENTER" layoutX="14.0" layoutY="92.0" prefHeight="32.0" prefWidth="154.0" text="Starting In" textFill="#3a25da">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="timer" alignment="CENTER" layoutX="14.0" layoutY="124.0" prefHeight="32.0" prefWidth="154.0" text="HH : MM : SS" textFill="#3a25da">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="startBtn" layoutX="26.0" layoutY="156.0" onAction="#startTest" prefHeight="34.0" prefWidth="130.0" style="-fx-background-color: #76ff03;" text="Start Test" textFill="#190303">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="38.0" layoutY="14.0" prefHeight="27.0" prefWidth="106.0" text="Webcam status" textFill="#1d20df">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="webcamStatus" alignment="CENTER" layoutX="22.0" layoutY="41.0" prefHeight="23.0" prefWidth="132.0" text="Ok">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

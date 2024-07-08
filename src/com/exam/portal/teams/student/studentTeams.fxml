@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #26c6da;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exam.portal.teams.student.StudentTeamsController">
+   <center>
+      <JFXListView fx:id="teamList" stylesheets="@../../cssFiles/style.css" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </JFXListView>
+   </center>
+   <top>
+      <AnchorPane prefHeight="74.0" prefWidth="600.0" style="-fx-background-color: #a7ffeb;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <ImageView fitHeight="48.0" fitWidth="59.0" layoutX="17.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../../../resource/images/account.png" />
+            </image>
+         </ImageView>
+         <Label fx:id="studentName" layoutX="72.0" layoutY="16.0" prefHeight="35.0" prefWidth="214.0" text="Student Name" wrapText="true">
+            <font>
+               <Font name="System Bold Italic" size="14.0" />
+            </font>
+         </Label>
+         <JFXButton layoutX="369.0" layoutY="23.0" onAction="#joinTeam" prefHeight="26.0" prefWidth="101.0" stylesheets="@../../cssFiles/style.css" text="Join a Team" textFill="#f0ebeb" />
+         <JFXButton layoutX="493.0" layoutY="22.0" onAction="#back" prefHeight="27.0" prefWidth="70.0" stylesheets="@../../cssFiles/style.css" text="Back" textFill="#f0ebeb" />
+      </AnchorPane>
+   </top>
+</BorderPane>

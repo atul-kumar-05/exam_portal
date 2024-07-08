@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="700.0" style="-fx-background-color: #c8e6c9;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exam.portal.teams.teacher.AddStudentController">
+   <children>
+      <Label layoutX="229.0" layoutY="14.0" text="Add new student to your team">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#1c0ac9" />
+                  <Stop color="#54517c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXComboBox fx:id="selectedTeam" layoutX="107.0" layoutY="56.0" prefHeight="26.0" prefWidth="486.0" promptText="Select Team" unFocusColor="#212080" />
+      <JFXTextField fx:id="searchText" labelFloat="true" layoutX="107.0" layoutY="103.0" prefHeight="26.0" prefWidth="393.0" promptText="Enter student name or email">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="510.0" layoutY="103.0" onAction="#search" prefHeight="27.0" prefWidth="83.0" stylesheets="@../../cssFiles/style.css" text="Search" textFill="#f0dcdc">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXListView fx:id="searchResultList" layoutX="106.0" layoutY="147.0" prefHeight="298.0" prefWidth="394.0" />
+      <JFXButton layoutX="337.0" layoutY="475.0" onAction="#addStudent" prefHeight="34.0" prefWidth="164.0" stylesheets="@../../cssFiles/style.css" text="Add Student" textFill="#f0e3e3">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#back" prefHeight="27.0" prefWidth="83.0" stylesheets="@../../cssFiles/style.css" text="Back" textFill="#f0dcdc">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

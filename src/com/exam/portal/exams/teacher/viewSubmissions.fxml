@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="484.0" prefWidth="651.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exam.portal.exams.teacher.ViewSubmissionsController">
+   <children>
+      <Label fx:id="title" alignment="CENTER" layoutX="24.0" layoutY="25.0" prefHeight="47.0" prefWidth="194.0" style="-fx-font: italic small-caps bold 20px/30px Georgia, serif; -fx-background-color: black;" text="Exam Title" textFill="WHITE" wrapText="true" />
+      <TableView fx:id="responseTable" layoutY="86.0" prefHeight="346.0" prefWidth="654.0" style="-fx-background-color: white;">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="137.0" text="Student Name " />
+          <TableColumn fx:id="emailColumn" prefWidth="187.0" text="Email" />
+            <TableColumn fx:id="contactColumn" prefWidth="148.0" text="Contact No." />
+            <TableColumn fx:id="marksColumn" prefWidth="149.0" text="Marks Obtained" />
+        </columns>
+      </TableView>
+      <Button fx:id="backBtn" layoutX="476.0" layoutY="433.0" mnemonicParsing="false" onAction="#back" prefHeight="47.0" prefWidth="155.0" style="-fx-font: italic small-caps bold 20px/30px Georgia, serif;" stylesheets="@../../cssFiles/style.css" text="Go Back" textFill="WHITE" />
+      <TextField fx:id="searchText" layoutX="270.0" layoutY="25.0" prefHeight="47.0" prefWidth="339.0" promptText="search by name or email" style="-fx-border-color: black;" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: #84ffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exam.portal.exams.scheduled.ScheduledExam">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <JFXButton onAction="#back" prefHeight="26.0" prefWidth="55.0" stylesheets="@../../cssFiles/style.css"
+                    text="back" textFill="#f8f0f0">
+            <VBox.margin>
+               <Insets bottom="2.0" left="5.0" top="2.0"/>
+            </VBox.margin>
+            <font>
+               <Font name="System Bold Italic" size="12.0"/>
+            </font>
+         </JFXButton>
+         <HBox prefHeight="30.0" prefWidth="700.0">
+            <JFXButton fx:id="activeBtn" onAction="#activeExams" prefHeight="32.0" prefWidth="248.0"
+                       styleClass="tabBtn" stylesheets="@../../cssFiles/style.css" text="Active">
+               <font>
+                  <Font name="System Bold Italic" size="12.0"/>
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="upcomingBtn" layoutX="10.0" layoutY="10.0" onAction="#upcomingExams" prefHeight="32.0" prefWidth="248.0"
+                       styleClass="tabBtn" stylesheets="@../../cssFiles/style.css" text="Upcoming">
+               <font>
+                  <Font name="System Bold Italic" size="12.0"/>
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="258.0" layoutY="10.0" onAction="#archivedExams" prefHeight="32.0" prefWidth="248.0"
+                       styleClass="tabBtn" stylesheets="@../../cssFiles/style.css" text="Archived">
+               <font>
+                  <Font name="System Bold Italic" size="12.0"/>
+               </font>
+            </JFXButton>
+         </HBox>
+      </VBox>
+   </top>
+   <center>
+      <VBox fx:id="vBox" prefHeight="214.4" prefWidth="200.0" spacing="5.0" style="-fx-background-color: #a7ffeb;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,60 @@
+.button{
+    -fx-background-color: black;
+    -fx-border-color: white;
+    -fx-border-radius: 5px;
+}
+.button:hover{
+    -fx-background-color: #00E676;
+}
+
+.jfx-button{
+    -fx-background-color: #3f1dcb;
+}
+
+.jfx-button:hover{
+    -fx-background-color: #00E676;
+}
+
+/*.jfx-list-cell:selected{*/
+/*    -fx-background-color: #3d8c91;*/
+/*}*/
+.jfx-list-cell:even:pressed{
+    -fx-background-color: #304ffe;
+}
+.jfx-list-cell:odd:pressed{
+    -fx-background-color: #fff;
+}
+
+.jfx-list-cell{
+    -fx-background-insets: 0.0;
+    -fx-start-margin: 20;
+    -fx-background-color: rgba(9, 36, 78, 0.56);
+    -fx-padding: 5;
+}
+
+.jfx-list-cell .jfx-rippler{
+    -fx-rippler-fill:BLUE;
+}
+.jfx-list-cell:hover{
+    -fx-background-color: #1bd79c;
+}
+
+.jfx-list-view {
+    -fx-background-insets: 0;
+    -fx-cell-vertical-margin: 10px;
+    -fx-alignment: center;
+}
+
+.questionBtn{
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+}
+
+.questionBtn:hover{
+    -fx-background-color: #6db4ac;
+}
+
+.tabBtn{
+    -fx-background-color: #a3bdc4;
+}

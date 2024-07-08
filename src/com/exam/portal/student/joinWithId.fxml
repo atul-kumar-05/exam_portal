@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="364.0" prefWidth="461.0" style="-fx-background-color: #a7ffeb;"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.exam.portal.student.JoinTeamController">
+   <JFXButton fx:id="joinWithIdClickedBtn" layoutX="208.0" layoutY="199.0" onAction="#joinWithIdClicked"
+              prefHeight="34.0" prefWidth="143.0" style=": white;" stylesheets="@../cssFiles/style.css" text="Join"
+              textFill="WHITE">
+      <font>
+         <Font name="System Bold Italic" size="12.0"/>
+      </font>
+   </JFXButton>
+   <TextField fx:id="teamId" layoutX="68.0" layoutY="120.0" prefHeight="43.0" prefWidth="280.0"
+              promptText="Enter  Team ID Here"
+              style="-fx-font: italic small-caps bold 20px/40px Georgia, serif; -fx-border-color: black; -fx-border-width: 2px;"/>
+</AnchorPane>

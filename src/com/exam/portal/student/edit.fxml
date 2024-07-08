@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #b3e5fc;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exam.portal.student.StudentController">
+    <children>
+        <TextField fx:id="newName" alignment="CENTER" layoutX="208.0" layoutY="82.0" prefHeight="45.0" prefWidth="251.0" promptText=" Enter Your Name" style="-fx-font: italic small-caps bold 12px/30px Georgia, serif;">
+            <font>
+                <Font name="Bodoni MT" size="20.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="newMail" alignment="CENTER" layoutX="208.0" layoutY="139.0" prefHeight="45.0" prefWidth="251.0" promptText=" Enter Your Email " style="-fx-font: italic small-caps bold 12px/30px Georgia, serif;">
+            <font>
+                <Font name="Bodoni MT" size="20.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="newNo" alignment="CENTER" layoutX="208.0" layoutY="200.0" prefHeight="45.0" prefWidth="251.0" promptText=" Enter Your  Contact NO." style="-fx-font: italic small-caps bold 12px/30px Georgia, serif;">
+            <font>
+                <Font name="Bodoni MT" size="20.0" />
+            </font>
+        </TextField>
+        <Button cancelButton="true" layoutX="268.0" layoutY="335.0" mnemonicParsing="false" onAction="#editSubmitted" prefHeight="35.0" prefWidth="190.0" styleClass="jfx-button" stylesheets="@../cssFiles/style.css" text="Submit" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <PasswordField fx:id="Pass" alignment="CENTER" layoutX="208.0" layoutY="258.0" prefHeight="45.0" prefWidth="251.0" promptText="Enter Password" style="-fx-font: italic small-caps bold 12px/30px Georgia, serif;" />
+        <Label layoutX="201.0" layoutY="32.0" prefHeight="35.0" prefWidth="216.0" text="Edit Your Details" textFill="#310d25">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="105.0" layoutY="95.0" text="Name" textFill="#190404">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="105.0" layoutY="148.0" text="Email" textFill="#242222">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="105.0" layoutY="209.0" text="Contact No" textFill="#262222">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="105.0" layoutY="267.0" text="Password" textFill="#2c2a2a">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

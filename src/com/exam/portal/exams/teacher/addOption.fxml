@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="634.0" style="-fx-background-color: #b3e5fc;" stylesheets="@../../cssFiles/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exam.portal.exams.teacher.AddOptionController">
+   <children>
+      <Label layoutX="96.0" layoutY="106.0" text="Option Text">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="optionText" layoutX="96.0" layoutY="126.0" prefHeight="42.0" prefWidth="478.0" />
+      <JFXToggleButton fx:id="isImage" layoutX="79.0" layoutY="183.0" text="Option is image">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXButton fx:id="chooseFileBtn" layoutX="278.0" layoutY="198.0" onAction="#chooseFile" styleClass="questionBtn" stylesheets="@../../cssFiles/style.css" text="Choose File">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="293.0" layoutY="267.0" onAction="#Done" prefHeight="36.0" prefWidth="160.0" styleClass="questionBtn" stylesheets="@../../cssFiles/style.css" text="Done">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXToggleButton fx:id="correct" layoutX="462.0" layoutY="182.0" text="Correct">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXToggleButton>
+   </children>
+</AnchorPane>

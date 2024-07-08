@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e1f5fe;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exam.portal.Controller">
+   <ImageView fitHeight="308.0" fitWidth="594.0" layoutX="25.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image fx:id="imageView" url="@../../../resource/images/exam_portal_splash.png" />
+      </image>
+   </ImageView>
+</AnchorPane>

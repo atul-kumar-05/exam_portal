@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="755.0" prefWidth="724.0" style="-fx-background-color: #e3f2fd;" stylesheets="@../../cssFiles/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exam.portal.exams.teacher.AddQuestionController">
+   <children>
+      <Label layoutX="37.0" layoutY="31.0" text="Enter Question" textFill="#0e0404">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="chooseFileBtn" layoutX="604.0" layoutY="62.0" onAction="#chooseFile" prefHeight="26.0" prefWidth="98.0" styleClass="questionBtn" stylesheets="@../../../cssFiles/style.css" text="Choose File">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXListView fx:id="options" layoutX="37.0" layoutY="174.0" prefHeight="342.0" prefWidth="539.0" />
+      <Label layoutX="37.0" layoutY="154.0" text="Options">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <JFXToggleButton fx:id="mcq" layoutX="125.0" layoutY="94.0" prefHeight="50.0" prefWidth="167.0" text="MCQ">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXButton layoutX="594.0" layoutY="174.0" onAction="#addOption" styleClass="questionBtn" stylesheets="@../../../cssFiles/style.css" text="Add Option">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="37.0" layoutY="543.0" prefHeight="20.0" prefWidth="202.0" text="Answer (in case of  subjective)">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="answers" layoutX="37.0" layoutY="572.0" prefHeight="26.0" prefWidth="400.0" />
+      <JFXTextArea fx:id="questionText" focusColor="#266cd5" layoutX="37.0" layoutY="54.0" prefHeight="44.0" prefWidth="561.0" unFocusColor="#272a7f" />
+      <JFXButton layoutX="594.0" layoutY="224.0" onAction="#undoOption" prefHeight="32.0" prefWidth="97.0" styleClass="questionBtn" stylesheets="@../../../cssFiles/style.css" text="Undo">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="594.0" layoutY="278.0" onAction="#redoOption" prefHeight="32.0" prefWidth="97.0" styleClass="questionBtn" stylesheets="@../../../cssFiles/style.css" text="Redo">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="37.0" layoutY="645.0" text="Point">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="point" layoutX="86.0" layoutY="643.0" />
+      <Label layoutX="347.0" layoutY="646.0" text="Negative Point">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="negPoint" layoutX="469.0" layoutY="642.0" />
+      <JFXButton layoutX="594.0" layoutY="709.0" onAction="#Done" prefHeight="32.0" prefWidth="98.0" styleClass="questionBtn" stylesheets="@../../../cssFiles/style.css" text="Done">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="35.0" layoutY="110.0" prefHeight="26.0" prefWidth="89.0" text="Question Type">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <JFXToggleButton fx:id="subjective" layoutX="323.0" layoutY="94.0" prefHeight="50.0" prefWidth="167.0" text="Subjective">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </JFXToggleButton>
+   </children>
+</AnchorPane>

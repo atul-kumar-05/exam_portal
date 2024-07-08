@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="600.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-background-color: #b2ebf2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exam.portal.exams.scheduled.ExamItem">
+   <padding>
+      <Insets bottom="5.0" left="20.0" top="5.0" />
+   </padding>
+   <HBox>
+      <Label fx:id="title" text="Title" textFill="#2c1515">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" prefHeight="20.0" prefWidth="88.0" text="Date" textFill="#233c39">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="100.0" top="5.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="time" layoutX="148.0" layoutY="15.0" prefHeight="20.0" prefWidth="94.0" text="Time" textFill="#233c39">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="50.0" top="5.0" />
+         </HBox.margin>
+      </Label>
+   </HBox>
+   <Label fx:id="teamName" text="Team Name">
+      <font>
+         <Font name="System Bold Italic" size="14.0" />
+      </font>
+   </Label>
+</VBox>

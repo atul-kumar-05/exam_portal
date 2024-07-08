@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="756.0" style="-fx-background-color: #69f0ae;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exam.portal.exams.student.SubmissionsController">
+    <top>
+        <AnchorPane prefHeight="86.0" prefWidth="682.0" style="-fx-background-color: #a7ffeb;" BorderPane.alignment="CENTER">
+            <Label fx:id="testTitle" alignment="CENTER" layoutX="307.0" layoutY="14.0" prefHeight="34.0" prefWidth="142.0" text="Title" textAlignment="CENTER" wrapText="true">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font></Label>
+            <Label fx:id="studentName" alignment="CENTER" layoutX="84.0" layoutY="45.0" prefHeight="29.0" prefWidth="118.0" text="Student Name" textAlignment="CENTER" wrapText="true">
+                <font>
+                    <Font name="System Bold Italic" size="12.0" />
+                </font></Label>
+            <Label fx:id="marks" alignment="CENTER" layoutX="564.0" layoutY="44.0" prefHeight="30.0" prefWidth="182.0" text="Marks" textAlignment="CENTER" wrapText="true">
+                <font>
+                    <Font name="System Bold Italic" size="12.0" />
+                </font></Label>
+         <JFXButton layoutX="14.0" layoutY="19.0" onAction="#back" stylesheets="@../../cssFiles/style.css" text="Back" textFill="#f2eaea">
+            <font>
+               <Font name="System Bold Italic" size="12.0" />
+            </font>
+         </JFXButton>
+            <BorderPane.margin>
+                <Insets left="5.0" right="5.0" top="5.0" />
+            </BorderPane.margin>
+        </AnchorPane>
+    </top>
+    <center>
+        <JFXListView fx:id="questionList" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" top="5.0" />
+            </BorderPane.margin>
+        </JFXListView>
+    </center>
+    <right>
+        <JFXListView prefHeight="435.0" prefWidth="107.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </BorderPane.margin>
+        </JFXListView>
+    </right>
+    <bottom>
+        <AnchorPane prefHeight="68.0" prefWidth="682.0" style="-fx-background-color: #a7ffeb;" stylesheets="@../../cssFiles/style.css" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" />
+            </BorderPane.margin>
+            <JFXButton layoutX="158.0" layoutY="20.0" onAction="#prevQuestion" prefHeight="26.0" prefWidth="128.0" text="Prev" textFill="#f2eaea">
+            <font>
+               <Font name="System Bold Italic" size="12.0" />
+            </font></JFXButton>
+            <JFXButton layoutX="357.0" layoutY="20.0" onAction="#nextQuestion" prefHeight="26.0" prefWidth="128.0" text="Next" textFill="#f8f0f0">
+            <font>
+               <Font name="System Bold Italic" size="12.0" />
+            </font></JFXButton>
+         <JFXTextField fx:id="newMarks" layoutX="529.0" layoutY="20.0" prefHeight="26.0" prefWidth="122.0" promptText="enter marks">
+            <font>
+               <Font name="System Bold Italic" size="12.0" />
+            </font>
+         </JFXTextField>
+         <JFXButton fx:id="updateBtn" layoutX="671.0" layoutY="21.0" onAction="#updateMarks" text="update" textFill="#f8ecec">
+            <font>
+               <Font name="System Bold Italic" size="12.0" />
+            </font>
+         </JFXButton>
+        </AnchorPane>
+    </bottom>
+</BorderPane>

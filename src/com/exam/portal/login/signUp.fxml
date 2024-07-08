@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="494.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exam.portal.login.LoginController">
+   <children>
+      <BorderPane prefHeight="597.0" prefWidth="698.0" style="-fx-border-color: black; -fx-border-width: 2px;">
+         <left>
+            <AnchorPane prefHeight="600.0" prefWidth="305.0" style="-fx-background-color: purple;" BorderPane.alignment="CENTER" />
+         </left>
+         <center>
+            <AnchorPane prefHeight="600.0" prefWidth="377.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="48.0" prefHeight="42.0" prefWidth="140.0" style="-fx-background-color: transparent;" text="Sign Up">
+                     <font>
+                        <Font name="Californian FB" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="pName" alignment="CENTER" layoutX="99.0" layoutY="144.0" prefHeight="38.0" prefWidth="246.0" promptText="Enter Name" style="-fx-border-color: Black; -fx-border-width: 0px 0px 2px 0px;">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="pNumber" alignment="CENTER" layoutX="99.0" layoutY="270.0" prefHeight="39.0" prefWidth="250.0" promptText="Enter Contact No." style="-fx-border-color: Black; -fx-border-width: 0px 0px 2px 0px;">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="pMail" alignment="CENTER" layoutX="99.0" layoutY="207.0" prefHeight="40.0" prefWidth="248.0" promptText="Enter Email" style="-fx-border-color: Black; -fx-border-width: 0px 0px 2px 0px;">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="pPassword" alignment="CENTER" layoutX="97.0" layoutY="327.0" prefHeight="35.0" prefWidth="254.0" promptText="Create Password" style="-fx-border-color: Black; -fx-border-width: 0px 0px 2px 0px;">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </PasswordField>
+                  <Button fx:id="doSignUp" layoutX="45.0" layoutY="409.0" mnemonicParsing="false" onAction="#signUp" prefHeight="51.0" prefWidth="275.0" style="-fx-background-color: black; -fx-font: italic small-caps bold 20px/30px Georgia, serif;" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancel" alignment="CENTER" layoutX="213.0" layoutY="493.0" mnemonicParsing="false" onAction="#backToLogin" prefHeight="46.0" prefWidth="140.0" style="-fx-background-color: BLACK; -fx-font: italic small-caps bold 18px/30px Georgia, serif;" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <RadioButton fx:id="isStudent" layoutX="97.0" layoutY="101.0" mnemonicParsing="false" text="Student">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
