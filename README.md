@@ -10,13 +10,10 @@ It is a Java based application which facilitate teachers to organize online exam
 5. Teacher and Student both can see all Scheduled exam. <br>
 6. Teacher can view submission all the students after exam finished and can update marks. <br>
 7. Student can view his submission after exam finished with correct answere of all question. <br>
-8. Exams are proctored and application continuously captures student's image and check it for face count and check it's tags. <br>
-9. Application continuously count the number of application running if student open any other application then he/she will be logged out from exam <br>
 
 # Advanced
 1. Question paper may contain question of type like MCQ , Subjective or Images.<br>
 2. There may be multiple exams running in application at same time.<br>
-3. Application provides chat functionality in each team where student can clarify their doubts regarding exams.<br>
 
 # Screenshots -
 ![Screenshot (160)](https://user-images.githubusercontent.com/68137797/147472537-f9dd753c-3e67-41d9-a27d-5b59322a76d9.png)
